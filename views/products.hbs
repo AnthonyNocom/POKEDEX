@@ -1,0 +1,41 @@
+<html>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<head>
+     <title>Products</title>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="/scripts/pokemon.js"></script>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+	
+<body>
+    {{>nav}}
+    <div class="pokemonCard">
+            POKEMON
+        </div>
+    <div id="bodyContainer">
+        PRODUCTS
+        <div class="selection">
+            <form method="get" action="/products" id="sortbyForm">
+                <select name="sortby" id="productsortby">
+                    <option value="default">SORT BY</option>
+                    <option value="alphabetical">Alphabetical</options>
+                    <option value="newest">Newest Releases</option>
+                </select>
+                
+                <br><span id="productsortbydisplay">{{details.sort}}</span>
+            </form>
+        </div>
+        <div class="productList">
+            {{#if details.products}}
+                {{#each details.products}}
+                    {{>productCard}}
+                {{/each}}
+            {{else}}
+                <div id="errorNoProducts">Looks like there are no products</div>
+            {{/if}}
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+.transacDetails{
+    vertical-align: top;
+    display: inline-block;
+    width: 15%;
+    margin: 20px;
+    text-align: center;
+}
+.transactionCard{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.transactionContent{
+    width: 75%;
+    background-color: lightgray;
+    margin-left: auto;
+    margin-right: auto;
+}
+#transacID{
+    padding-top: 10px;
+}
+.transacDelete{
+    vertical-align: center;
+    text-align: center;
+}
+.transactionCard:hover{
+    cursor: pointer;
+}
+.transacBox{
+    left: 30%;
+    width: 40%;
+    font-size: 24px;
+    font-weight: bold;
+    position:fixed;
+    padding: 20px;
+    background-color: white;
+    border-style: solid;
+
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.transacInfoBox{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-color: lightgray;
+}
+.transacDetailsInfo{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: black;
+    color: white;
+    margin: 10px 30px;
+}
+#transactionClose{
+    float: right;
+    background-color: transparent;
+    border-width: 0;
+    font-size: 24px;
+}
+#transactionClose:hover{
+    cursor: pointer;
+}
+.transacHeader{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+#transacMainHeader{
+    margin: auto;
+    padding: 30px 10px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 40px;
+    width: 90%;
+}
+#transDeleteButton{
+    background-color: grey;
+    color: white;
+    border-width: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#transDeleteButton:hover{
+    cursor: pointer;
+}

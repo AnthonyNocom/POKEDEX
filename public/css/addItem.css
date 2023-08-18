@@ -1,0 +1,61 @@
+.miniProdBox{
+    left: 30%;
+    width: 40%;
+    font-size: 24px;
+    font-weight: bold;
+    position:fixed;
+    padding: 20px;
+    background-color: white;
+    border-style: solid;
+
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.miniProdDetails{
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #5EDAC0;
+}
+.prodDetails{
+    border-width: 0;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.submitBtn{
+    background-color: white;
+    border-width: 0;
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btnClose{
+    float: right;
+    background-color: transparent;
+    border-width: 0;
+    font-size: 24px;
+}
+button:hover{
+    cursor: pointer;
+}
+#addProductsButton {
+    background-color: #5EDAC0;	
+	border-style: solid;
+	padding:15px;
+	margin-left:20px;
+	font-weight:bold;
+	border-width:3px;
+	border-color:black;
+}
+#editDelete{
+    float: right;
+    background-color: white;
+    border-width: 0;
+
+}

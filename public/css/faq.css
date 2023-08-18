@@ -1,0 +1,124 @@
+#FAQheader{
+	font-family: 'Roboto';
+	font-weight: lighter;
+	font-size:100px;
+	text-align: center;
+    margin-bottom: 70px;
+}
+.question{
+	text-align: center;  
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+.faqQuestion{
+	font-family: 'Roboto';
+    font-weight: bolder;
+    font-size: 24;
+	margin-left:20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: 80%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;	
+    text-align: justify;
+}
+#addQuestion{
+    background-color: #5EDAC0;	
+	border-style: solid;
+	padding:15px;
+	margin-left:20px;
+	font-weight:bold;
+	border-width:3px;
+	border-color:black;
+}
+.faqAnswer{
+	font-family: 'Roboto';
+	font-weight: lighter;
+    font-size: 18;
+	margin-left:50px;
+    margin-bottom: 10px;
+    width: fit-content;
+    width: 80%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;	
+    text-align: justify;
+}
+.prodDetails{
+    border-width: 0;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.miniQuestionBox{
+    left: 30%;
+    width: 40%;
+    font-size: 24px;
+    font-weight: bold;
+    position:fixed;
+    padding: 20px;
+    background-color: white;
+    border-style: solid;
+
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.miniProdDetails{
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #5EDAC0;
+}
+
+#submitBtn{
+    background-color: white;
+    border-width: 0;
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#errorNoQuestions{
+	text-align: center; 
+}
+
+button:hover{
+    cursor: pointer;
+}
+.buttonClose{
+    float: right;
+    background-color: transparent;
+    border-width: 0;
+    font-size: 24px;
+
+}
+.submitBtn{
+    background-color: white;
+    border-width: 0;
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#editQuestionDelete{
+    float: right;
+    background-color: white;
+    border-width: 0;
+
+}

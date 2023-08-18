@@ -1,0 +1,1011 @@
+html{
+	font-family: 'Montserrat';
+}
+body{
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px; 
+    margin-right: 0px;
+}
+button:hover{
+	cursor:pointer;
+}
+#welcome {
+    background-image: url("../images/homepage_background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70%;
+  }
+  
+#welcomeAdmin {
+    padding: 120px;
+}
+#homepageSub{
+	font-size:25px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-weight: normal;
+}
+#seeProds{
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10;
+    border-width: 0;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+main{
+	min-height:100%;
+}
+#logo{
+	width:70px;
+	height:70px;
+    padding:20px;
+}
+.iconFooter{
+    bottom: 12px;
+	width:25px;
+	height:25px;
+}
+.icon{
+	margin-top: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px; 
+    margin-right: 0px;
+    width:100px;
+	height:50px;
+    position: relative;
+    top: -23px;
+    left: 15px;
+}
+#welcome{
+	font-family: 'Roboto';
+	font-weight: bold;
+	font-size: 90px;
+	text-align: center;
+}
+.top{
+	background-color: #5EDAC0;
+	padding-right:50px;
+	padding-left:50px;
+    padding-top:20px;
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.searchBox {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.searchButton {
+    padding: 10px 20px;
+    border: none;
+    background-color: #5EDAC0;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.topnav {
+	width:100%;
+	overflow: hidden;
+	background-color: black;
+    text-align: center;
+}
+
+.topnav a {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 25px 50px;
+	text-decoration: none;
+	font-size: 20px;
+}
+.right{
+	float:right;
+	padding-top:30px;
+}
+.topnav a:hover {
+	background-color: #B99976;
+	color: #654321;
+}
+
+.topnav a.active {
+  background-color: #966c3b;
+  color: white;
+}
+.right {
+	float: right;
+  margin: 14px 5px 16px 0px;
+  text-decoration: none;
+}
+
+
+
+.wholeFoot{
+	bottom: 0;
+	width: 100%;
+	height: 15%;
+}
+.foot{
+	padding-left:100px;
+	padding-top:10px;
+    padding-bottom:10px;
+	background-color:#5EDAC0;
+    
+}
+.foot div{
+	display:inline-block;
+}
+
+.foot h3 {
+    font-weight: bold;
+}
+
+.followUs{
+    position: relative;
+    top: -23px;
+    left: 45px;
+    
+}
+
+.footBottom{
+	padding-top:10px;
+    padding-bottom:10px;
+	padding-left:100px;
+	background-color:white;
+}
+
+/*
+
+RAYDEN'S SIDE.
+*/
+
+#welcome {
+    padding: 20px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+#welcome img {
+    margin: 10px;
+    margin-bottom: 20px;
+    width: 15%;
+}
+
+#adminbody{
+    background-color: rgb(131,205,187);
+}
+
+#cuisinagreen{
+    position: absolute;
+    width: 40%;
+    top: 30%;
+    left: 8%;
+}
+
+.loginForm input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 0px;
+  font-size: 17px;
+  margin-bottom: 30px;
+  text-decoration: none; 
+  box-shadow: 2px 4px #888888;
+}
+
+
+.loginForm input[type=submit] {
+  background-color: rgb(94,218,192);
+  color: white;
+  cursor: pointer;
+  border: none;
+  height: 60px;
+  box-shadow: none;
+}
+
+.loginForm input[type=submit]:hover {
+  background-color: rgb(34,218,200);
+}
+
+
+.loginForm {
+  position: absolute;
+  width: 300px;
+  height: 250px;
+  top: 15%;
+  left: 55%;
+  background: white;
+  padding: 8% 4%;
+  border-radius: 10px;
+}
+
+#bodyContainer{
+    margin: auto;
+    padding: 30px 10px;
+	font-family: 'Roboto';
+    font-weight: bold;
+	font-size:40px;
+    width: 90%;
+    min-height: 400px;
+}
+
+.selection{
+    float:right;
+    font-size:30px;
+}
+
+.selection select{
+    font-family: 'Roboto';
+    font-weight: bold;
+	font-size:20px;
+    border: none;
+    background: none;
+    width: 120px;
+}
+
+.pokemonList{
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.pokemonCard {
+    display: inline-block;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 20px;
+  }
+
+.productList{
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.productCard {
+  display: inline-block;
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 20px;
+}
+
+.productCard a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.productCard h1 {
+    margin-bottom: 10px;
+}
+
+.productCard h2 {
+    font-weight: normal;
+    margin: 0px;
+}
+
+.productCard img {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+#productDisplay{
+    width: 40%;   
+}
+
+.productDesc{
+    float:right;
+    width:50%;
+    font-size: 20px;
+}
+
+.productDesc h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.productDesc h2{
+    font-size: 25px;
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+.productDesc h3{
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.productDesc select{
+    width: 50%;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgb(229,229,229);
+    font-size: 20px;
+    margin: 0px 20px 10px 0px;
+    font-weight: normal;
+}
+
+.productDesc input[type=button]{
+    padding: 10px 20px;
+    border: 0px white solid;
+    border-radius: 5px;
+    background-color: rgb(229,229,229);
+    font-size: 20px;
+    margin: 0px;
+    font-weight: normal;
+}
+
+#increaseQty:hover, #decreaseQty:hover{
+    cursor: pointer;
+}
+
+.increaseQty:hover, .decreaseQty:hover{
+    cursor: pointer;
+}
+
+.productDesc input[type=submit]{
+    padding: 20px;
+    border: 0px white solid;
+    border-radius: 5px;
+    background-color: rgb(94,218,192);
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.productDesc input[type=submit]:hover{
+    cursor: pointer;
+}
+.productDesc li{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.sizeChart {
+    float: right;   
+    margin-top: 7px;  
+}
+
+.sizeChart:hover {
+    cursor: pointer;
+}
+
+#questionmark {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.closeup {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9); 
+  text-align: center;
+}
+
+#sizeChartImage {
+    width: 70%;
+    margin: auto;
+    animation-name: zoom;
+    animation-duration: 0.3s;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.closeBtn:hover {
+    cursor: pointer;
+}
+
+#errorNoProducts{
+    margin-top: 150px;
+}
+
+#sortbyForm{
+    margin: 0px;
+    padding: 0px;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+.noCart {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.noCart h3 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 2px;
+}
+
+.noCart p {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.noCart input[type=submit]{
+    padding: 20px;
+    border: 0px white solid;
+    border-radius: 5px;
+    background-color: rgb(94,218,192);
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    width: 25%;
+}
+
+.noCart input[type=submit]:hover{
+    cursor: pointer;
+}
+
+.cartProduct {
+    width: 100%;
+    background-color: #eeeeee;
+    margin: auto;
+    font-size: 20px;
+    padding: 15px;
+    height: 120px;
+    margin-top: 20px;
+}
+
+.cartProduct img {
+    max-width: 15%;
+    height: 100%;
+    float: left;
+}
+
+
+.cartProduct .productInfo {
+    width: 20%;
+    margin: 0px;
+    height: 100%;
+    margin-left: 20px;
+    float: left;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.cartProduct .productInfo p{
+    margin: 5px;
+    
+}
+
+.productName{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.cartProduct .price {
+    width: 20%;
+    margin: 0px;
+    margin-left: 20px;
+    float: right;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 10px;
+    
+}
+
+.removeBtn {
+    float: right;
+    font-size: 25px;
+    font-weight: normal;
+    color: red;
+    margin-right: 10px;
+    
+}
+
+.removeBtn:hover {
+    cursor: pointer;
+}
+
+
+.cartProduct .productQTY {
+    width: 20%;
+    margin: 0px;
+    margin-left: 20px;
+    float: right;
+    font-size: 20px;
+    font-weight: normal;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.cartProduct .productQTY input[type=button]{
+    padding: 10px 20px;
+    border: 0px white solid;
+    border-radius: 5px;
+    background-color: rgb(229,229,229);
+    font-size: 20px;
+    margin: 0px;
+    font-weight: normal;
+}
+
+.cartProduct .productQTY h3{
+    margin: 0px;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.finalPrice {
+    font-size: 30px;
+    text-align: right;
+    margin-top: 30px;
+    
+}
+
+
+.checkoutBtn {
+    text-align: right;
+    margin-top: 55px;
+    margin-bottom: 35px;
+}
+
+
+.checkoutBtn input {
+    padding: 20px;
+    border: 0px white solid;
+    border-radius: 5px;
+    background-color: rgb(94,218,192);
+    font-size: 15px;
+    font-weight: bold;
+    width: 30%;
+}
+
+.checkoutBtn:hover{
+    cursor: pointer;
+}
+
+.checkoutForm, .shipmentForm, .paymentForm, .confirmPaymentForm{
+    width:50%;
+    font-size: 18px;
+    border-right: 2px solid gray;
+    padding-right: 30px;
+    margin-top: 30px;
+}
+
+.checkoutForm .full{
+    width: 100%;
+    padding: 20px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgb(229,229,229);
+    font-size: 20px;
+    margin: 5px 0px 15px 0px;
+    font-weight: normal;
+
+}
+
+.checkoutForm .half{
+    width: 48%;
+    padding: 20px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgb(229,229,229);
+    font-size: 20px;
+    margin: 5px 0px 15px 0px;
+    font-weight: normal;
+
+}
+
+.checkoutForm .right {
+    float: right;
+}
+
+.checkoutForm h3 {
+    margin: 0px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.checkoutForm select:invalid { 
+    color: #7a7a7a;
+}
+
+.cartlist {
+    width: 45%;
+    float: right;
+}
+
+.orderlist {
+    width: 50%;
+    margin: auto;
+}
+
+.cartlist hr, .orderlist hr {
+    width: 105%;
+    margin-left: 15px;
+    margin-top: 50px;
+    background-color: gray;
+}
+
+.cartlist .totalLabel, .cartlist .finalPrice {
+    margin: 0px;
+    margin-top: 5px;
+    margin-left: 30px;
+    font-size: 18px;
+    float: left;
+    
+}
+
+
+
+.cartlist .finalPrice{
+    float: right;
+    margin-right: -15px;
+    
+}
+
+.orderProduct {
+    width: 100%;
+    margin: auto;
+    font-size: 20px;
+    padding: 15px;
+    height: 110px;
+    margin-top: 50px;
+    margin-bottom: -50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.orderProduct img {
+    width: 100px;
+    border: 1px solid white;
+    border-radius: 15px;
+    max-height: 100%;
+}
+
+
+.qtyofProduct {
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+.cartproductInfo p {
+    font-size: 15px;
+    margin: 5px;
+    font-weight: normal;
+}
+
+.cartproductInfo .nameofProduct {
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.priceOfProduct {
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+
+.paymentForm input[type=submit] {
+    padding: 20px;
+    border: 0px white solid;
+    border-radius: 5px;
+    background-color: rgb(94,218,192);
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    width: 55%;
+}
+
+.shipmentForm input[type=submit], .confirmPaymentForm input[type=submit]{
+    padding: 20px;
+    border: 0px white solid;
+    border-radius: 5px;
+    background-color: rgb(94,218,192);
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    width: 55%;
+}
+
+
+#finalStep{
+    padding: 20px;
+    border: 0px white solid;
+    border-radius: 5px;
+    background-color: rgb(94,218,192);
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    width: 55%;
+    color: white;
+    background-color: #DC554A;
+}
+
+#finalStep:hover {
+    cursor: pointer;
+}
+
+#depositContainer p{
+    margin: 10px;
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#depositContainer input[type=file]{
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#depositContainer div {
+    margin: auto;
+    width: 90%;
+    background-color: white;
+    padding: 20px;
+}
+
+#depositContainer div div{
+    margin: auto;
+    width: 90%;
+    background-color: #eeeeee;
+    padding: 40px;
+}
+
+
+
+#depositContainer button{
+    padding: 20px;
+    border: 0px white solid;
+    border-radius: 5px;
+    background-color: rgb(94,218,192);
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    width: 50%;
+    color: white;
+    background-color: #DC554A;
+    margin: auto;
+}
+
+#finalStep:hover {
+    cursor: pointer;
+}
+
+.checkoutForm input[type=submit] {
+    padding: 20px;
+    border: 0px white solid;
+    border-radius: 5px;
+    background-color: rgb(94,218,192);
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    width: 50%;
+}
+
+.checkoutForm label {
+    display: inline-block;
+    width: 48%;
+    margin: 0px;
+    font-weight: normal;
+
+}
+
+.checkoutForm .labelFull {
+    display: inline-block;
+    width: 100%;
+    margin: 0px;
+    font-weight: normal;
+
+}
+
+
+
+.rightLabel {
+    position: relative;
+    right: -18px;
+}
+
+.confirmPaymentForm input[type=submit]{
+    color: white;
+    background-color: #DC554A;
+    width: 55%;
+}
+
+.shipmentForm a, .checkoutForm a, .confirmPaymentForm a, .paymentForm a{
+    margin: 0px;
+    margin-top: 27px;
+    margin-left: 40px;
+    text-align: right;
+    color: black;
+    font-size: 16px;
+}
+
+.shipFee {
+    width: 92%;
+    display: flex;
+    padding: 10px 20px;
+    border: 0px white solid;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.shipInfo {
+    width: 92%;
+    padding: 10px 20px;
+    border: 0px white solid;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.shipFee p {
+    display: inline-block;
+    color: black;
+    font-size: 20px;
+}
+
+
+.checkoutForm input[type=submit]:hover,  .shipmentForm input[type=submit]:hover, .shipmentForm u:hover{
+    cursor: pointer;
+}
+
+.paymentForm .options {
+    width: 92%;
+    padding: 20px 20px;
+    border: 0px white solid;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    
+}
+
+input[type=submit]{
+    cursor: pointer;
+}
+
+#orderSuccessBody {
+    background-color: #eeeeee;
+}
+
+
+#statusContainer {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 30px 20px;
+    border: 0px solid white;
+    border-radius: 5px;
+}
+
+#statusContainer span {
+    position: relative;
+    color: #01a601;
+    font-size: 50px;
+    font-weight: bold;
+    top: -40px;
+    right: -20px;
+    
+}
+
+#statusContainer input {
+    padding: 20px;
+    border: 0px white solid;
+    border-radius: 5px;
+    background-color: rgb(94,218,192);
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    width: 50%;
+}
+
+
+#checkmark {
+    width: 15%;
+    margin-bottom: 20px;
+}
+
+.statusDetails {
+    display: flex;
+    margin: 30px 0px;
+}
+
+.statusDetails p {
+    width: 45%;
+}
+
+.detailInfo {
+    font-weight: bold;
+}
+
+.notFinal {
+    font-weight: normal;
+}
+
+.moreInfo {
+    margin-top: 12px;
+    display: none;
+
+}
+.moreInfo p {
+    margin: 6px;
+    
+}
+
+.moreInfoDetails {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
