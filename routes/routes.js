@@ -3,6 +3,6 @@ const controller = require(`../controllers/controller.js`);
 
 const app = express();
 
-app.get(`/products`, controller.getProducts);
+app.get(`/pokemonList`, controller.getPokemonList);
 
 module.exports = app;

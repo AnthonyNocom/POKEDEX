@@ -2,22 +2,19 @@
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 <head>
-     <title>Products</title>
+     <title>National Pokedex</title>
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-     <script src="/scripts/pokemon.js"></script>
+     <script src="scripts/pokemon.js"></script>
 	<link rel="stylesheet" href="/css/style.css">
 </head>
 
 	
 <body>
     {{>nav}}
-    <div class="pokemonCard">
-            POKEMON
-        </div>
     <div id="bodyContainer">
-        PRODUCTS
+        POKEMON
         <div class="selection">
-            <form method="get" action="/products" id="sortbyForm">
+            <form method="get" action="/pokemonList" id="sortbyForm">
                 <select name="sortby" id="productsortby">
                     <option value="default">SORT BY</option>
                     <option value="alphabetical">Alphabetical</options>
@@ -27,14 +24,8 @@
                 <br><span id="productsortbydisplay">{{details.sort}}</span>
             </form>
         </div>
-        <div class="productList">
-            {{#if details.products}}
-                {{#each details.products}}
-                    {{>productCard}}
-                {{/each}}
-            {{else}}
-                <div id="errorNoProducts">Looks like there are no products</div>
-            {{/if}}
+        <div class="pokemonList" id="pokemonList">
+            <ul id="pokedex">hello?</ul>
         </div>
     </div>
 </body>
