@@ -30,3 +30,22 @@ details of the Pokemon. (using pokeapi and javascript)
 - Home Page
     - Cards filtering functionality
     - Cards sorting functionality
+
+## Known Bugs and Issues
+These are some of the known bugs and issues that were not fixed in time by August 22, 2023.
+
+- Home Page
+    - Card view list normally displays pokemon numerically, sorted by ID, but sometimes, it display pokemon in a random order.
+- "Detailed Info Page"
+    - Accessing the detailed info page of many specific pokemons at the same time causes the website to crash. This may be an issue in the implementation of async functions and in the retrieval of pokemon weaknesses.
+    - Weaknesses are only derived from the primary type and not calculated by multiplying the weaknesses of the primary and secondary types.
+- "Search Pokemon" functionality
+    - Pressing enter after inputting the pokemon name or id does not allow searching. 
+        - Cause: wrong element id retrieved in pokemon.js,
+        - Cause: forgot a "keyup" event handler in specificPokemon.js, it is present in pokemon.js
+    - No string handling in the search box means only lowercase and exact-match pokemon names work in searching.
+        - Ex.: "bulbasaur" search works fine. "BuLBAsAuR" and "Bulbasaur" searches result in a crash.
+    - No string handling for pokemon IDs
+        - Ex.: "1" or "1010" searches work fine. "001" or "058" do not.
+    - Search functionality redirects the user to the Detailed Info Page instead of displaying all pokemons in the homepage
+        - Ex.: Searching for "dod" does not display doduo and dodrio in the homepage.
