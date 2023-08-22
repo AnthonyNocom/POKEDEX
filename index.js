@@ -22,14 +22,6 @@ hbs.registerHelper("capitalizeFirstLetter", function(string) {
 	return new hbs.SafeString(string.charAt(0).toUpperCase() + string.slice(1));
 });
 
-hbs.registerHelper("func", function(options) {
-	return options.fn({id:1});
-});
-
-hbs.registerHelper('json', function(context) {
-    return JSON.stringify(context);
-});
-
 app.use(`/`, routes);
 
 app.listen(8080, function(error){
