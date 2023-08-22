@@ -22,6 +22,15 @@ hbs.registerHelper("capitalizeFirstLetter", function(string) {
 	return new hbs.SafeString(string.charAt(0).toUpperCase() + string.slice(1));
 });
 
+hbs.registerHelper("capitalizeArray", function(arr) {
+	capitalizedArray = arr.map(function(str) {
+		str = str.charAt(0).toUpperCase() + str.slice(1)
+		str = ' ' + str
+		return str;
+	})
+	return capitalizedArray;
+});
+
 app.use(`/`, routes);
 
 app.listen(8080, function(error){

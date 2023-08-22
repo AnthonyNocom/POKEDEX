@@ -1,0 +1,107 @@
+<html>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<head>
+     <title>{{#capitalizeFirstLetter pokemonData.name}}{{/capitalizeFirstLetter}} Pokemon Details</title>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+     <script src="scripts/specificPokemon.js"></script>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    {{>nav}}    
+    <div id="bodyContainer">
+        <img id="productDisplay" src="{{pokemonData.image}}">
+        <div class="productDesc">
+            <h1 id="itemName">{{#capitalizeFirstLetter pokemonData.name}}{{/capitalizeFirstLetter}}</h1>
+            <h2 id="itemPrice">Pokemon ID: #{{#padID pokemonData.id}}{{/padID}}</h2>
+            <input type="hidden" id="hiddenID" value="{{pokemonData.id}}">
+            <p class="pokemonInfo">
+                {{#if pokemonData.type.[0]}}
+                    <span class="type {{pokemonData.type.[0]}}">{{pokemonData.type.[0]}}</span>
+                {{/if}}
+                {{#if pokemonData.type.[1]}}
+                    <span class="type {{pokemonData.type.[1]}}">{{pokemonData.type.[1]}}</span>
+                {{/if}}
+            </p>
+            <hr>
+            <div class="detailed-information-container">
+                <h2><b>Detailed Information</b></h2>
+                <h2>Pokedex Entry:</h2>
+                <h3>"{{pokemonData.flavorText}}"</h3>
+                <h2>Height (m): </h2>{{pokemonData.height}}
+                <h2>Weight (kgs): </h2>{{pokemonData.weight}}
+                <br>
+                <div class="abilities-container">
+                    <h2>Abilities:</h2>
+                    <table class="abilities">
+                        <tr>
+                            {{#if pokemonData.abilities.[0]}}
+                                <td class="ability">{{pokemonData.abilities.[0]}}</td>
+                            {{/if}}
+                            {{#if pokemonData.abilities.[1]}}
+                                <td class="ability">{{pokemonData.abilities.[1]}}</td>
+                            {{/if}}
+                            {{#if pokemonData.abilities.[2]}}
+                                <td class="ability">{{pokemonData.abilities.[2]}}</td>
+                            {{/if}}
+                        </tr>
+                    </table>
+                </div>
+                <div class="stats-container">
+                    <h2>Base Stats:</h2>
+                    <table class="stats">
+                        <tr>
+                            {{#if pokemonData.stats.[0]}}
+                                <td class="stat" style="background-color: #e23753">{{pokemonData.stats.[0]}}</td>
+                            {{/if}}
+                            {{#if pokemonData.stats.[1]}}
+                                <td class="stat" style="background-color: #ff994d">{{pokemonData.stats.[1]}}</td>
+                            {{/if}}
+                            {{#if pokemonData.stats.[2]}}
+                                <td class="stat" style="background-color: #ffdc4a">{{pokemonData.stats.[2]}}</td>
+                            {{/if}}
+                            {{#if pokemonData.stats.[3]}}
+                                <td class="stat" style="background-color: #85ddff">{{pokemonData.stats.[3]}}</td>
+                            {{/if}}
+                            {{#if pokemonData.stats.[4]}}
+                                <td class="stat" style="background-color: #a8f087">{{pokemonData.stats.[4]}}</td>
+                            {{/if}}
+                            {{#if pokemonData.stats.[5]}}
+                                <td class="stat" style="background-color: #f890a2">{{pokemonData.stats.[5]}}</td>
+                            {{/if}}
+                            {{#if pokemonData.totalStats}}
+                                <td class="stat" style="background-color: #7495db">Total {{pokemonData.totalStats}}</td>
+                            {{/if}}
+                        </tr>
+                    </table>
+                </div>
+                <br>
+            </div>
+            <div class="weaknesses-container">
+                <h2>Weaknesses:</h2>
+                <table>
+                <tr>
+                    <th>Damaged Normally By</th>
+                    <th>Weak To</th>
+                    <th>Immune To</th>
+                    <th>Resistant To</th>
+                </tr>
+                <tr>
+                    <td class="weaknesses-text">{{#capitalizeArray pokemonData.weaknesses.normallyDamagedFrom}}{{/capitalizeArray}}</td>
+                    <td class="weaknesses-text">{{#capitalizeArray pokemonData.weaknesses.doubleDamageFrom}}{{/capitalizeArray}}</td>
+                    <td class="weaknesses-text">{{#capitalizeArray pokemonData.weaknesses.noDamageFrom}}{{/capitalizeArray}}</td>
+                    <td class="weaknesses-text">{{#capitalizeArray pokemonData.weaknesses.halfDamageFrom}}{{/capitalizeArray}}</td>
+                </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="button-container">
+                <button class="previous-button">Previous</button>
+                <button class="next-button">Next</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

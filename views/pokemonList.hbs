@@ -9,20 +9,17 @@
 	<link rel="stylesheet" href="/css/style.css">
 </head>
 
-	
 <body>
     {{>nav}}
     <div id="bodyContainer">
         POKEMON
         <div class="selection">
-            <form method="get" action="/pokemonList" id="sortbyForm">
+            <form method="get" action="/" id="sortbyForm">
+                SORT BY
                 <select name="sortby" id="productsortby">
-                    <option value="default">SORT BY</option>
-                    <option value="alphabetical">Alphabetical</options>
-                    <option value="newest">Newest Releases</option>
-                </select>
-                
-                <br><span id="productsortbydisplay">{{details.sort}}</span>
+                    <option value="id">ID</options>
+                    <option value="pokemonName">Name</option>
+                </select>                
             </form>
         </div>
         <div class="pokemonList" id="pokemonList">
