@@ -7,6 +7,7 @@ details of the Pokemon. (using pokeapi and javascript)
 ## Local Set Up
 - Run `npm install`
 - To run the application, execute `node index.js`
+- Access the web application through "localhost:8080"
 
 ## Content
 - [`controllers`](controllers) - This folder contains files that define callback functions for client requests.
